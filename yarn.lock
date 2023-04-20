@@ -4258,6 +4258,11 @@ highlight.js@^10.7.1:
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.7.3.tgz#697272e3991356e40c3cac566a74eef681756531"
   integrity sha512-tzcUFauisWKNHaRkN4Wjl/ZA07gENAjFl3J/c480dprkGTg5EQstgaNFqBfUqCq54kZRIEcreTsAgF/m2quD7A==
 
+highlight.js@^11.5.1, highlight.js@^11.7.0:
+  version "11.7.0"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.7.0.tgz#3ff0165bc843f8c9bce1fd89e2fda9143d24b11e"
+  integrity sha512-1rRqesRFhMO/PRF+G86evnyJkCgaZFOI+Z6kdj15TA18funfoqJXvgPCLSf0SWq3SRfg1j3HlDs8o4s3EGq1oQ==
+
 hosted-git-info@^2.1.4:
   version "2.8.9"
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
@@ -7347,6 +7352,32 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
+todovue-button@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/todovue-button/-/todovue-button-2.1.0.tgz#6c442a6442811fd1a21350382155e038ad474a43"
+  integrity sha512-shfer+BJCdKk+CY0GJamDJmzeqUCnUGdaBDkbW57JcWVjz7MuW2Cn7fzXgsqrx6A7vs0UvhPYhxGuxG1zT7KJw==
+  dependencies:
+    core-js "^3.8.3"
+    todovue-css "^1.3.0"
+    todovue-demo "^2.2.1"
+    vue "^3.2.13"
+
+todovue-css@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/todovue-css/-/todovue-css-1.3.0.tgz#ecee4d986eef6cacb5375cec1d746a369a6cd7d5"
+  integrity sha512-+X5DYwDOHZfAs+HRcDpFvO7o9XBZunMluwSWcdBxSMF5d66DJvqdWHctW1ta0lB2J+K104+pszDAa9OB+pr68w==
+
+todovue-demo@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/todovue-demo/-/todovue-demo-2.2.1.tgz#4dc66765973bba4da889a34310b7e607ae553c14"
+  integrity sha512-ff/u3YEMajkFuc3ESokeYfB43bqkH4FHhtSBia1Z4KMx+xW8+oojE6EuL9ACVn6ExVS/g9AOhZl6Y00FVLd/BQ==
+  dependencies:
+    core-js "^3.8.3"
+    highlight.js "^11.7.0"
+    todovue-css "^1.3.0"
+    vue "^3.2.13"
+    vue-highlight-code "^0.1.16"
+
 toidentifier@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.1.tgz#3be34321a88a820ed1bd80dfaa33e479fbb8dd35"
@@ -7569,6 +7600,14 @@ vue-eslint-parser@^8.0.1:
     lodash "^4.17.21"
     semver "^7.3.5"
 
+vue-highlight-code@^0.1.16:
+  version "0.1.16"
+  resolved "https://registry.yarnpkg.com/vue-highlight-code/-/vue-highlight-code-0.1.16.tgz#b3f46730477c7652ad50fb074d3715f7cc99bab4"
+  integrity sha512-aPVwAOxHxG9wCpbZKEmqdlPc/g9l+FT+uYA6bLrqpbEe72KcxqIPuVjjtDX0Eba4qxG35gyxESyiJWeVtsv/Vg==
+  dependencies:
+    highlight.js "^11.5.1"
+    vue "^3.2.25"
+
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
@@ -7596,7 +7635,7 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
-vue@^3.2.13:
+vue@^3.2.13, vue@^3.2.25:
   version "3.2.47"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.2.47.tgz#3eb736cbc606fc87038dbba6a154707c8a34cff0"
   integrity sha512-60188y/9Dc9WVrAZeUVSDxRQOZ+z+y5nO2ts9jWXSTkMvayiWxCWOWtBQoYjLeccfXkiiPZWAHcV+WTPhkqJHQ==

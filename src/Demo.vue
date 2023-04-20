@@ -1,10 +1,26 @@
 <template>
-  <h1>TODOVvue Seach</h1>
+  <tv-demo :component="component" :variants="demos" />
 </template>
 
 <script>
+import { shallowRef } from "vue";
+import TvSearch from "@/component/TvSearch.vue";
+import TvDemo from "todovue-demo";
+import { demos } from "@/utils/mocks.js";
+
 export default {
-  name: "DemoPage",
+  name: "DemoSearch",
+  setup() {
+    const component = shallowRef(TvSearch);
+
+    return {
+      component,
+      demos,
+    };
+  },
+  components: {
+    TvDemo,
+  },
 };
 </script>
 
