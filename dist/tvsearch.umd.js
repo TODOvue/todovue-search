@@ -489,7 +489,7 @@ const useSearch = results => {
     });
   };
   const changeModalOpened = event => {
-    if (event.ctrlKey && event.keyCode === 70) {
+    if ((event.ctrlKey || event.metaKey) && event.keyCode === 70) {
       event.preventDefault();
       _manageModal(true);
       _focusInput();
