@@ -10,7 +10,6 @@ import {
 const useSearch = (results) => {
   onMounted(() => {
     document.addEventListener("keydown", changeModalOpened);
-    console.log(results);
   });
 
   onBeforeUnmount(() => {
