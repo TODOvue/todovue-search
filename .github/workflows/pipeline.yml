@@ -7,17 +7,18 @@ on:
     branches: [master]
 
 jobs:
-  avoid_reduncy:
+  avoid_redundancy:
     runs-on: ubuntu-latest
     steps:
       - name: Cancel Previous Redundant Builds
-        uses: styfle/cancel-workflow-action@0.9.1
+        uses: styfle/cancel-workflow-action@0.11.0
         with:
           access_token: ${{ github.token }}
   lint:
+    needs: [avoid_redundancy]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - uses: actions/setup-node@v2
@@ -28,12 +29,12 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Lint
         run: yarn eslint
-        
+
   test:
     needs: [lint]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - uses: actions/setup-node@v2
