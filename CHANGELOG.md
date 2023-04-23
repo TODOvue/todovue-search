@@ -1,5 +1,10 @@
 # Changelog **TODOvue Search**
-## v1.0.1
+
+## v1.0.3
+### Fixes
+* The build is generated
+
+## v1.0.2
 ### Dependencies Update
 * Update `todovue-css` to version `1.5.0`
 ### Fixes
