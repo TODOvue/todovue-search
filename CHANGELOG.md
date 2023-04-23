@@ -1,4 +1,10 @@
 # Changelog **TODOvue Search**
+## v1.0.1
+### Dependencies Update
+* Update `todovue-css` to version `1.5.0`
+### Fixes
+* Icon in the search engine is corrected
+* The emit event of the seeker is sent
 
 ## v1.0.1
 ### Fixes

@@ -81,6 +81,7 @@ export default {
   components: {
     TvButton,
   },
+  emits: ["search"],
 };
 </script>
 
