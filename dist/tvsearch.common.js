@@ -382,7 +382,7 @@ if (typeof window !== 'undefined') {
 
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__(797);
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/component/TvSearch.vue?vue&type=template&id=6eeef0ae
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/component/TvSearch.vue?vue&type=template&id=ac044fe2
 
 const _hoisted_1 = {
   class: "tv-search"
@@ -434,7 +434,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)(result.title), 1);
   }), 128))])) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true)])])) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true)], 64);
 }
-;// CONCATENATED MODULE: ./src/component/TvSearch.vue?vue&type=template&id=6eeef0ae
+;// CONCATENATED MODULE: ./src/component/TvSearch.vue?vue&type=template&id=ac044fe2
 
 // EXTERNAL MODULE: ./node_modules/todovue-button/dist/tvbutton.common.js
 var tvbutton_common = __webpack_require__(8);
@@ -444,7 +444,6 @@ var tvbutton_common_default = /*#__PURE__*/__webpack_require__.n(tvbutton_common
 const useSearch = results => {
   (0,external_commonjs_vue_commonjs2_vue_root_Vue_.onMounted)(() => {
     document.addEventListener("keydown", changeModalOpened);
-    console.log(results);
   });
   (0,external_commonjs_vue_commonjs2_vue_root_Vue_.onBeforeUnmount)(() => {
     document.removeEventListener("keydown", changeModalOpened);
@@ -549,7 +548,8 @@ const useSearch = results => {
   },
   components: {
     TvButton: (tvbutton_common_default())
-  }
+  },
+  emits: ["search"]
 });
 ;// CONCATENATED MODULE: ./src/component/TvSearch.vue?vue&type=script&lang=js
  
