@@ -38,7 +38,7 @@
 import TvButton from "todovue-button";
 import useSearch from "@/composables/useSearch";
 export default {
-  name: "SearchBox",
+  name: "TvSearch",
   props: {
     placeholder: {
       type: String,
@@ -58,7 +58,6 @@ export default {
       inputValue,
       inputSearch,
       openedModal,
-      theme,
       changeModalOpened,
       closeModal,
       openModal,
@@ -70,7 +69,6 @@ export default {
       inputValue,
       inputSearch,
       openedModal,
-      theme,
       changeModalOpened,
       closeModal,
       openModal,

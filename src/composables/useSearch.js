@@ -17,7 +17,6 @@ const useSearch = (results) => {
   });
 
   const inputValue = ref("");
-  const theme = ref("dark");
   const openedModal = ref(false);
   const inputSearch = ref();
 
@@ -77,7 +76,6 @@ const useSearch = (results) => {
     inputValue,
     inputSearch,
     openedModal,
-    theme,
     changeModalOpened,
     closeModal,
     openModal,
