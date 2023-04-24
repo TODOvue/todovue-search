@@ -1,5 +1,10 @@
 # Changelog **TODOvue Search**
 
+## v1.0.4
+### Fixes
+* Remove unused property
+* Fix component name
+
 ## v1.0.3
 ### Fixes
 * The build is generated
