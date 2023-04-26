@@ -7352,34 +7352,29 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
-todovue-button@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/todovue-button/-/todovue-button-2.1.0.tgz#6c442a6442811fd1a21350382155e038ad474a43"
-  integrity sha512-shfer+BJCdKk+CY0GJamDJmzeqUCnUGdaBDkbW57JcWVjz7MuW2Cn7fzXgsqrx6A7vs0UvhPYhxGuxG1zT7KJw==
+todovue-button@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/todovue-button/-/todovue-button-2.2.0.tgz#ee171539e62a02e92142c968549ecea215792bc1"
+  integrity sha512-wAby/YV74W+U9Uav9oL/WFBJ4BcDbe9lJzt5qm9/Zc/DpivjJGQ9KKbGDtgQ7Xajtp52o3qPnwEj1zQ0PGfXPA==
   dependencies:
     core-js "^3.8.3"
-    todovue-css "^1.3.0"
-    todovue-demo "^2.2.1"
+    todovue-css "^1.7.0"
+    todovue-demo "^2.3.0"
     vue "^3.2.13"
 
-todovue-css@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/todovue-css/-/todovue-css-1.3.0.tgz#ecee4d986eef6cacb5375cec1d746a369a6cd7d5"
-  integrity sha512-+X5DYwDOHZfAs+HRcDpFvO7o9XBZunMluwSWcdBxSMF5d66DJvqdWHctW1ta0lB2J+K104+pszDAa9OB+pr68w==
+todovue-css@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/todovue-css/-/todovue-css-1.7.0.tgz#42d87e2cf032b85847843b290fe8459b9e061ea9"
+  integrity sha512-BUH7/o4wJ2JC3YDwSBJBL6v1foPHCsjMUnKFwGthKMV5LtkZ4Sf2My4y8DIk266u8jdAAwMEWHS8EumiD7B9Rw==
 
-todovue-css@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/todovue-css/-/todovue-css-1.5.0.tgz#328fa3dbf4f91cffd8cd81da127a152b9fa27e32"
-  integrity sha512-qk3Pa9MXJ19V0sNp0X7qIdglUteC3Ko1tfS5vE/lFWf4dKYJYPv9crLqoJs5EK1XhKNPzFVAgNuS1h73TreliQ==
-
-todovue-demo@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/todovue-demo/-/todovue-demo-2.2.1.tgz#4dc66765973bba4da889a34310b7e607ae553c14"
-  integrity sha512-ff/u3YEMajkFuc3ESokeYfB43bqkH4FHhtSBia1Z4KMx+xW8+oojE6EuL9ACVn6ExVS/g9AOhZl6Y00FVLd/BQ==
+todovue-demo@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/todovue-demo/-/todovue-demo-2.3.0.tgz#1245f1d150a4b4c424642a40cbe7484c8f12c967"
+  integrity sha512-yWHtg3RnZ02qKidAWDEfwlaXQ04Auc5/e9sjGb5fu14Wh6sznTWTDaQb21/I5x3+n+KdtVPMkP5GbVQ+pItAiA==
   dependencies:
     core-js "^3.8.3"
     highlight.js "^11.7.0"
-    todovue-css "^1.3.0"
+    todovue-css "^1.7.0"
     vue "^3.2.13"
     vue-highlight-code "^0.1.16"
 
