@@ -81,8 +81,8 @@ export default {
 ## Props
 | Name         | Type   | Default                    | Description       |
 |--------------|--------|----------------------------|-------------------|
-| placeholder  | String | `"Search..."`              | Placeholder input |
-| titleButton  | String | `"Search`                  | Title button      |
+| placeholder  | String | `""`                       | Placeholder input |
+| titleButton  | String | `""`                       | Title button      |
 | results      | Array  | `[]`                       | Array of results  |
 | customStyles | Object | [See below](#customStyles) | Custom styles     |
 

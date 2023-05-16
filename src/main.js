@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 import Demo from "./Demo.vue";
-import "vue-highlight-code/dist/style.css"; // Styles are imported to display the code
+import "vue-highlight-code/dist/style.css";
 import TvDemo from "todovue-demo";
 import "@/assets/scss/_global.scss";
 
