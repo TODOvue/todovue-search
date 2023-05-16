@@ -1,18 +1,17 @@
+const { VueLoaderPlugin } = require("vue-loader");
 module.exports = {
-  output: {
-    publicPath: "./",
-  },
   module: {
     rules: [
       {
-        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-        loader: "file-loader",
-        options: {
-          name: "[name].[hash:8].[ext]",
-          outputPath: "img",
-          publicPath: "../img",
-        },
+        test: /\.vue$/,
+        loader: "vue-loader",
       },
     ],
+  },
+  plugins: [new VueLoaderPlugin()],
+  output: {
+    filename: "tvsearch.js",
+    library: "TvSearch",
+    libraryTarget: "umd",
   },
 };

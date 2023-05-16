@@ -1,0 +1,108 @@
+@import "variables";
+@import "mixins";
+
+.dark-mode {
+  & .tv-search {
+    & .tv-search-icon {
+      @include defaultIcon($icon-search-light);
+      border: 2px solid $color-background-card-light;
+    }
+  }
+  & .tv-search-modal {
+    background-color: rgba($color-background-card-dark, 0.9);
+
+    & .tv-search-modal-content {
+      background-color: $color-background-card-light;
+      box-shadow: 0 0 15px 0 $color-background-card-light;
+    }
+  }
+}
+
+.light-mode {
+  & .tv-search {
+    & .tv-search-icon {
+      border: 2px solid $color-background-card-dark;
+      @include defaultIcon($icon-search);
+    }
+  }
+
+  & .tv-search-modal {
+    background-color: rgba($color-background-card-light, 0.9);
+    & .tv-search-modal-content {
+      background-color: $color-background-card-dark;
+      box-shadow: 0 0 15px 0 $color-background-card-dark;
+    }
+  }
+}
+
+.tv-search {
+  & .tv-search-icon {
+    display: inline-block;
+    height: 24px;
+    padding: 15px;
+    width: 24px;
+  }
+}
+
+.tv-search-modal {
+  align-items: flex-start;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  padding-top: 100px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  & .tv-search-modal-content {
+    border-radius: 5px;
+    padding: 20px;
+    width: 550px;
+
+    & .tv-search-input {
+      border-radius: 10px 0 0 10px;
+      border: none;
+      font-size: 16px;
+      height: 44px;
+      outline: none;
+      padding: 10px;
+      width: 100%;
+    }
+
+    & .tv-btn {
+      border-radius: 0 10px 10px 0;
+    }
+
+    & .tv-search-modal-content-input {
+      display: flex;
+    }
+
+    & .tv-search-results {
+      background: #fff;
+      border-radius: 0 0 10px 10px;
+      color: $color-background-card-dark;
+      display: inline-block;
+      max-height: 200px;
+      min-width: 300px;
+      overflow-y: auto;
+      transition: all 0.3s ease;
+      width: 100%;
+    }
+
+    & .tv-search-results-title {
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 0.7rem 1rem;
+
+      &:hover {
+        background: rgba($color-background-card-dark, 0.2);
+      }
+
+      &:active {
+        background: rgba($color-background-card-dark, 0.4);
+      }
+    }
+  }
+}

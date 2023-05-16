@@ -130,7 +130,93 @@ export const demos = [
       titleButton: "Search",
       results,
     },
-    html: `<!-- You can open the finder by pressing Ctrl + f or Command + f -->
-<tv-search placeholder="Type Blog" titleButton="Search" />`,
+    html: `<!-- You can open the search component with Ctrl + f or Command + f -->
+<template>
+  <tv-search
+    placeholder="Type Blog"
+    titleButton="Search"
+    :results="results"
+  />
+</template>
+
+<script>
+import TvSearch from "tv-search";
+
+export default {
+  components: {
+    TvSearch,
+  },
+  setup() {
+    const results = [
+      {
+        id: 1,
+        title: "Blogs one",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      ...
+    ];
+    return {
+      results,
+    };
+  }
+}
+</script>`,
+  },
+  {
+    id: 2,
+    title: "TvSearch custom styles",
+    propsData: {
+      placeholder: "Type Blog",
+      titleButton: "Search",
+      results,
+      customStyles: {
+        bgBody: "#1e1d23",
+        bgInput: "#8673a1",
+        bgButton: "#80286e",
+        colorButton: "#d7c9c9",
+      },
+    },
+    html: `<!-- You can open the search component with Ctrl + f or Command + f -->
+<template>
+  <tv-search
+    placeholder="Type Blog"
+    titleButton="Search"
+    :results="results"
+    :customStyles="customStyles"
+  />
+</template>
+
+<script>
+import { ref } from "vue";
+import TvSearch from "tv-search";
+
+export default {
+  components: {
+    TvSearch,
+  },
+  setup() {
+    const results = [
+      {
+        id: 1,
+        title: "Blogs one",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      ...
+    ];
+    
+    const customStyles = ref({
+      bgBody: "#0A4539",
+      bgInput: "#284780",
+      bgButton: "#80286E",
+      colorButton: "#D5B7B7",
+    });
+    
+    return {
+      results,
+      customStyles,
+    };
+  }
+}
+</script>`,
   },
 ];

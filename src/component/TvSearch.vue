@@ -2,8 +2,13 @@
   <div class="tv-search">
     <i class="tv-search-icon tv-icon tv-cursor-pointer" @click="openModal"></i>
   </div>
-  <div v-if="openedModal" class="tv-search-modal" @click.self="closeModal">
-    <div class="tv-search-modal-content">
+  <div
+    v-if="openedModal"
+    class="tv-search-modal"
+    @click.self="closeModal"
+    :style="custom.bgBody"
+  >
+    <div class="tv-search-modal-content" :style="custom.bgInput">
       <div class="tv-search-modal-content-input">
         <input
           type="text"
@@ -19,6 +24,7 @@
           icon="search-light"
           @click="search"
           :class="{ 'tv-radius-none-br': filterResults.length >= 1 }"
+          :customStyle="custom.customButton"
         >
           {{ titleButton }}
         </tv-button>
@@ -52,6 +58,10 @@ export default {
       type: Array,
       default: () => [],
     },
+    customStyles: {
+      type: Object,
+      default: () => ({}),
+    },
   },
   setup(props) {
     const {
@@ -63,7 +73,8 @@ export default {
       openModal,
       search,
       filterResults,
-    } = useSearch(props.results);
+      custom,
+    } = useSearch(props);
 
     return {
       inputValue,
@@ -74,6 +85,7 @@ export default {
       openModal,
       search,
       filterResults,
+      custom,
     };
   },
   components: {
@@ -83,4 +95,4 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped lang="scss" src="../assets/scss/style.scss"></style>
