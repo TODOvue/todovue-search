@@ -17,7 +17,7 @@
 - [Development](#development)
 - [Changelog](https://github.com/TODOvue/todovue-search/blob/master/CHANGELOG.md)
 - [Contributing](https://github.com/TODOvue/todovue-search/blob/master/CONTRIBUTING.md)
-- [License](https://github.com/TODOvue/todovue-demo/search/master/LICENSE)
+- [License](https://github.com/TODOvue/todovue-search/search/master/LICENSE)
 
 ## Installation
 Install with npm or yarn
@@ -36,7 +36,7 @@ You can also import it directly in the **main.js** file, so you don't have to im
 ```js
 import { createApp } from "vue";
 import App from "./App.vue";
-import TvCard from "todovue-card";
+import TvSearch from "todovue-search";
 
 const app = createApp(App);
 app.component("TvSearch", TvSearch);
@@ -48,7 +48,7 @@ You can open the search component with Ctrl + f or Command + f
 ```js
 <template>
   <tv-search
-    placeholder="Type Blog"
+    placeholder="Search blog..."
     titleButton="Search"
     :results="results"
   />
@@ -100,7 +100,7 @@ export default {
 | search | Event when the search is executed |
 
 ## Customize
-You can customize the card by customStyles, you can see the [props](#props) section to see the available options
+You can customize the component by customStyles, you can see the [props](#props) section to see the available options
 ```js
 const customStyles = {
     bgBody: "#0A4539",
@@ -112,7 +112,7 @@ const customStyles = {
 ```js
 <template>
   <tv-search
-    placeholder="Type Blog"
+    placeholder="Search blog..."
     titleButton="Search"
     :results="results"
     :customStyles="customStyles"
