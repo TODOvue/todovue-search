@@ -5,7 +5,6 @@
 <script>
 import { shallowRef } from "vue";
 import TvSearch from "@/component/TvSearch.vue";
-import TvDemo from "todovue-demo";
 import { demos } from "@/utils/mocks.js";
 
 export default {
@@ -17,9 +16,6 @@ export default {
       component,
       demos,
     };
-  },
-  components: {
-    TvDemo,
   },
 };
 </script>

@@ -6,6 +6,7 @@
   "author": "Cristhian Daza",
   "description": "Component search created for the TodoVue blog",
   "license": "MIT",
+  "homepage": "https://todovue-search.netlify.app/",
   "repository": {
     "type": "git",
     "url": "https://github.com/TODOvue/todovue-search.git"
@@ -16,7 +17,13 @@
     "web",
     "vue",
     "vuejs",
-    "vue-js"
+    "vue-js",
+    "vue3",
+    "search",
+    "component",
+    "vue-component",
+    "search-component",
+    "search-bar"
   ],
   "bugs": {
     "url": "https://github.com/todovue/todovue-search/issues"
@@ -25,13 +32,11 @@
     "demo": "vue-cli-service serve",
     "test:unit": "vue-cli-service test:unit --coverage",
     "lint": "vue-cli-service lint",
-    "build": "vue-cli-service build --target lib --name tvsearch src/component/TvSearch.vue --config webpack.config.js"
+    "build": "vue-cli-service build --target lib --name tvsearch --webpack-config webpack.config.js src/component/TvSearch.vue"
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "todovue-button": "^2.2.0",
-    "todovue-css": "^1.7.0",
-    "todovue-demo": "^2.3.0",
+    "todovue-button": "^2.3.2",
     "vue": "^3.2.13"
   },
   "devDependencies": {
@@ -49,6 +54,12 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
     "jest": "^27.0.5",
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2",
+    "todovue-demo": "^3.0.1",
+    "vue-loader": "^17.1.0",
+    "vue-template-compiler": "^2.7.14",
+    "webpack": "^5.81.0"
   }
 }

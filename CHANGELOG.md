@@ -1,5 +1,14 @@
 # Changelog **TODOvue Search**
 
+## v1.2.0
+### Dependencies Update
+* The `todovue-css` component is removed
+* Update `todovue-demo` to version 3.0.2 as development dependency
+* Update `todovue-button` to version 2.3.3
+### Features
+* The sass module is added to the project
+* Customization is added to the component
+
 ## v1.1.0
 ### Dependencies Update
 * Update `todovue-button` to version `2.2.0`
