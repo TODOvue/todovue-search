@@ -1,0 +1,6 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useSearch custom style should render custom style 1`] = `
+<div class="tv-search"><i class="tv-search-icon tv-icon tv-cursor-pointer"></i></div>
+<!--v-if-->
+`;

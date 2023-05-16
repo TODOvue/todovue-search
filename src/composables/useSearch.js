@@ -73,14 +73,12 @@ const useSearch = (props) => {
   );
 
   const _getCustomStyleBody = (customSearch, bgKey) => {
-    if (!customSearch[bgKey]) return null;
     return {
       backgroundColor: `rgba(${_convertHexToRgb(customSearch[bgKey])}, 0.9)`,
     };
   };
 
   const _getCustomStyleInput = (customSearch, bgKey) => {
-    if (!customSearch[bgKey]) return null;
     return {
       backgroundColor: customSearch[bgKey],
       boxShadow: `0 0 15px 0 ${customSearch[bgKey]}`,
@@ -88,14 +86,14 @@ const useSearch = (props) => {
   };
 
   const _getCustomStyleButton = (customSearch, bgKey, colorKey) => {
-    if (!customSearch[bgKey] && !customSearch[colorKey]) return null;
     return {
-      backgroundColor: customSearch[bgKey],
-      color: customSearch[colorKey],
+      backgroundColor: customSearch[bgKey] ? customSearch[bgKey] : "",
+      color: customSearch[colorKey] ? customSearch[colorKey] : "",
     };
   };
 
   const _convertHexToRgb = (hex) => {
+    if (!hex) return;
     if (hex[0] === "#") {
       const r = parseInt(hex.slice(1, 3), 16);
       const g = parseInt(hex.slice(3, 5), 16);
@@ -107,7 +105,7 @@ const useSearch = (props) => {
 
   const custom = computed(() => {
     const { customStyles } = props;
-    if (!customStyles) return null;
+    if (!customStyles) return {};
     return {
       bgBody: _getCustomStyleBody(customStyles, "bgBody"),
       bgInput: _getCustomStyleInput(customStyles, "bgInput"),
