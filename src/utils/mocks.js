@@ -187,6 +187,7 @@ export default {
 </template>
 
 <script>
+import { ref } from "vue";
 import TvSearch from "tv-search";
 
 export default {
@@ -203,12 +204,12 @@ export default {
       ...
     ];
     
-    const customStyles = {
+    const customStyles = ref({
       bgBody: "#0A4539",
       bgInput: "#284780",
       bgButton: "#80286E",
       colorButton: "#D5B7B7",
-    };
+    });
     
     return {
       results,

@@ -48,11 +48,11 @@ export default {
   props: {
     placeholder: {
       type: String,
-      default: "",
+      default: "Search...",
     },
     titleButton: {
       type: String,
-      default: "",
+      default: "Search",
     },
     results: {
       type: Array,
