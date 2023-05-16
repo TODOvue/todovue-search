@@ -10,8 +10,8 @@ module.exports = {
   },
   plugins: [new VueLoaderPlugin()],
   output: {
-    filename: "tvcard.js",
-    library: "TvCard",
+    filename: "tvsearch.js",
+    library: "TvSearch",
     libraryTarget: "umd",
   },
 };
