@@ -7660,10 +7660,10 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
-todovue-button@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/todovue-button/-/todovue-button-2.3.0.tgz#e702d4a0cf7188b45b90a2e8bf49682d8ba04ffa"
-  integrity sha512-YKQZSFG4/o5h6bMuo5YJiDH6KvygKW3fD7w0ZleRVX6kW2Gv17L3HNFN9TCi+G+08R1rupDTTG0Ec4A+4d95Pg==
+todovue-button@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/todovue-button/-/todovue-button-2.3.2.tgz#9f8799a71f29a420664463c13e1cd2ab64c6c1d7"
+  integrity sha512-/OH5QUP0eWuHj3TgmwyqBYhII+q4wzeM+eSQSJd9dPWSnfeRpDkkzla74Xzt+Pkgzqjk5GujZNcAsUBBhEXnZA==
   dependencies:
     core-js "^3.8.3"
     vue "^3.2.13"

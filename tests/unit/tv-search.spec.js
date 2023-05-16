@@ -1,7 +1,6 @@
 import { mount } from "@vue/test-utils";
 import useSearch from "../../src/composables/useSearch";
 import TvSearch from "@/component/TvSearch.vue";
-import { computed } from "vue";
 
 describe("useSearch", () => {
   let results;
