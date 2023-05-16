@@ -4,7 +4,7 @@
 ### Dependencies Update
 * The `todovue-css` component is removed
 * Update `todovue-demo` to version 3.0.2 as development dependency
-* Update `todovue-button` to version 2.3.0
+* Update `todovue-button` to version 2.3.3
 ### Features
 * The sass module is added to the project
 * Customization is added to the component
