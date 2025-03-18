@@ -1,0 +1,106 @@
+@use "variables";
+@use "mixins";
+
+.dark-mode {
+  & .tv-search {
+    &-icon {
+      border: 2px solid variables.$light-card-bg;
+    }
+  }
+  & .tv-search-modal {
+    background-color: rgba(variables.$dark-card-bg, 0.9);
+
+    & .tv-search-modal-content {
+      background-color: variables.$light-card-bg;
+      box-shadow: 0 0 15px 0 variables.$light-card-bg;
+    }
+  }
+}
+
+.light-mode {
+  & .tv-search {
+    &-icon {
+      border: 2px solid variables.$dark-card-bg;
+    }
+  }
+
+  & .tv-search-modal {
+    background-color: rgba(variables.$light-card-bg, 0.9);
+    & .tv-search-modal-content {
+      background-color: variables.$dark-card-bg;
+      box-shadow: 0 0 15px 0 variables.$dark-card-bg;
+    }
+  }
+}
+
+.tv-search {
+  &-icon {
+    display: inline-block;
+    height: 32px;
+    padding: 2px;
+    width: 32px;
+  }
+}
+
+.tv-search-modal {
+  align-items: flex-start;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  padding-top: 100px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  & .tv-search-modal-content {
+    border-radius: 5px;
+    padding: 20px;
+    width: 550px;
+
+    & .tv-search-input {
+      border-radius: 10px 0 0 10px;
+      border: none;
+      font-size: 16px;
+      height: 44px;
+      outline: none;
+      padding: 10px;
+      width: 100%;
+    }
+
+    & .tv-btn {
+      border-radius: 0 10px 10px 0;
+    }
+
+    & .tv-search-modal-content-input {
+      display: flex;
+    }
+
+    & .tv-search-results {
+      background: #fff;
+      border-radius: 0 0 10px 10px;
+      color: variables.$dark-card-bg;
+      display: inline-block;
+      max-height: 200px;
+      min-width: 300px;
+      overflow-y: auto;
+      transition: all 0.3s ease;
+      width: 100%;
+    }
+
+    & .tv-search-results-title {
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 0.7rem 1rem;
+
+      &:hover {
+        background: rgba(variables.$dark-card-bg, 0.2);
+      }
+
+      &:active {
+        background: rgba(variables.$dark-card-bg, 0.4);
+      }
+    }
+  }
+}
