@@ -1,0 +1,60 @@
+{
+  "name": "@todovue/tvsearch",
+  "private": false,
+  "author": "Cristhian Daza",
+  "description": "Component Search created for the TodoVue blog",
+  "license": "MIT",
+  "version": "0.0.0",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TODOvue/todovue-search.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TODOvue/todovue-search/issues"
+  },
+  "keywords": [
+    "todovue",
+    "front-end",
+    "web",
+    "vue",
+    "vuejs",
+    "vue-js",
+    "search",
+    "show-search",
+    "vue-search",
+    "vue-search-component"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/todovue-search.es.js",
+      "require": "./dist/todovue-search.cjs.js"
+    }
+  },
+  "main": "dist/todovue-search.cjs.js",
+  "module": "dist/todovue-search.es.js",
+  "types": "dist/todovue-search.d.ts",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:demo": "cp README.md public/ && VITE_BUILD_TARGET=demo vite build"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "sass": "^1.85.0",
+    "vite": "^5.2.0",
+    "vite-plugin-css-injected-by-js": "^3.5.2",
+    "vite-plugin-dts": "^4.5.0"
+  }
+}
